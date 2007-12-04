@@ -1,6 +1,6 @@
 %define name multi-aterm
 %define version 0.2.1
-%define release 1mdk
+%define release  %mkrel 1
 
 Summary: Multi aterm terminal
 Name: %{name}
