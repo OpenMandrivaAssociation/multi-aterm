@@ -12,7 +12,6 @@ License: GPL
 Group: Terminals
 URL: http://www.nongnu.org/materm/materm.html
 #packager: Antoine Ginies <aginies@mandrakesoft.com>
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
 BuildRequires: X11-devel
 
