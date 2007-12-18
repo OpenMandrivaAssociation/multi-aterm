@@ -13,7 +13,7 @@ Group: Terminals
 URL: http://www.nongnu.org/materm/materm.html
 #packager: Antoine Ginies <aginies@mandrakesoft.com>
 Prefix: %{_prefix}
-BuildRequires: X11-devel
+BuildRequires: X11-devel xpm-devel
 
 %description
 Multi-aterm is a firstly a terminal emulator like rxvt, xterm, eterm, aterm 
