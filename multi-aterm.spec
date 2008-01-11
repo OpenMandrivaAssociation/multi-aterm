@@ -39,14 +39,15 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/pixmaps
 install -m644 %{SOURCE1} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/
 
-(mkdir -p %{buildroot}/%{_menudir}
-cat > %{buildroot}/%{_menudir}/%{name}  <<EOF
-?package(%name): \
-command="%{_bindir}/%{name}" needs="X11" \
-icon="%{_datadir}/pixmaps/%name.png" \
-section="Terminals" \
-title="Multi-aterm"  \
-longtitle="Multi-aterm"
+(mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/%{name}
+Icon=%{_datadir}/pixmaps/%name.png
+Categories=TerminalEmulator;Systenalm;Utility;
+Name=Multi-aterm
+Comment=Multi-aterm
 EOF
 )
 
@@ -79,6 +80,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applnk/Multimedia/%{name}.desktop
 %{_mandir}/man1/*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 %{_bindir}/multi-aterm
 
