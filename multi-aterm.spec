@@ -10,7 +10,7 @@ URL:		http://www.nongnu.org/materm/materm.html
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	X11-devel
 BuildRequires:	xpm-devel
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 
 %description
 Multi-aterm is a terminal emulator like rxvt, xterm, eterm, aterm 
