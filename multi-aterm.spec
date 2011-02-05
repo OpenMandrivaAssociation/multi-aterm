@@ -1,14 +1,14 @@
 Summary:	Light tabbed terminal emulator
 Name:		multi-aterm
 Version:	0.2.1
-Release:	%{mkrel 3}
+Release:	%{mkrel 4}
 Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.bz2
 Source1:	multi-aterm.png
 License:	GPLv2+
 Group:		Terminals
 URL:		http://www.nongnu.org/materm/materm.html
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	X11-devel
+BuildRequires:	libx11-devel
 BuildRequires:	xpm-devel
 BuildRequires:	imagemagick
 
@@ -25,7 +25,7 @@ written in X-lib (for people not using GNOME nor KDE).
 
 %build
 %configure2_5x --enable-keepscrolling --enable-mousewheel --enable-transparency --enable-xterm-scroll --enable-fading --enable-half-shadow --enable-swapscreen --with-xpm=/usr
-%make CFLAGS="%{optflags}"
+%make
 
 %install
 rm -rf %{buildroot}
