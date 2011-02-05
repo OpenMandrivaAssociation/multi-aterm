@@ -9,6 +9,7 @@ Group:		Terminals
 URL:		http://www.nongnu.org/materm/materm.html
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	libx11-devel
+BuildRequires:	libxt-devel
 BuildRequires:	xpm-devel
 BuildRequires:	imagemagick
 
