@@ -1,7 +1,7 @@
 Summary:	Light tabbed terminal emulator
 Name:		multi-aterm
 Version:	0.2.1
-Release:	5
+Release:	6
 Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.bz2
 Source1:	multi-aterm.png
 License:	GPLv2+
