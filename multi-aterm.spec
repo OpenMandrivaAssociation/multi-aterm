@@ -6,7 +6,7 @@ Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.bz2
 Source1:	multi-aterm.png
 License:	GPLv2+
 Group:		Terminals
-URL:		http://www.nongnu.org/materm/materm.html
+URL:		https://www.nongnu.org/materm/materm.html
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	xpm-devel
